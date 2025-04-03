@@ -20,7 +20,10 @@ app.get("/search", async (req, res) => {
             if (!keyword) return res.status(400).json({ message: "Keyword is required" });
 
             const results = await Customer.find({
-                  $or: [{ title: new RegExp(keyword, "i") }, { description: new RegExp(keyword, "i") }],
+                  $or: [
+                        { title: { $regex: keyword, $options: "i" } },
+                        { description: { $regex: keyword, $options: "i" } },
+                  ],
             });
 
             res.json(results);

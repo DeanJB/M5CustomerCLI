@@ -4,8 +4,8 @@ const customersSchema = new mongoose.Schema({
       // firstName: { type: String },
       // lastName: { type: String },
       // phone: { type: String },
+      auctionID: { type: String, required: true, unique: true },
       email: { type: String },
-      // auctionID: { type: Number, unique: true },
 
       // Trade me auction fields
       title: { type: String, required: true },
