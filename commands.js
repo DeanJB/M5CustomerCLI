@@ -85,7 +85,6 @@ async function listAllListings() {
             console.error("❌ Error listing customers:", error.message);
       }
 }
-
 async function deleteListing() {
       try {
             const answers = await inquirer.prompt([
