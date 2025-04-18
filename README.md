@@ -62,46 +62,11 @@ This project is a **Customer Management CLI** tool with an API backend that allo
 ### **Running the Project**
 
 - **Start the server**:
-  To run the API server, use the following command:
+  To run the CLI interface, use the following command:
 
      ```bash
-     npm run dev
+     node commands.js
      ```
-
-     This will start the server on **http://localhost:5000**.
-
-- **CLI Commands**:
-  The CLI interface allows you to interact with the database directly. Here are the available commands:
-
-     - **Add a new auction listing**:
-
-          ```bash
-          node commands.js add
-          ```
-
-          This command will prompt you to input auction details, including the customer’s name, auction title, description, start price, and reserve price.
-
-     - **List all auction listings**:
-
-          ```bash
-          node commands.js list
-          ```
-
-          This will display all current auction listings in the database.
-
-     - **Delete an auction listing by email**:
-
-          ```bash
-          node commands.js delete
-          ```
-
-          This command will delete a customer/auction listing from the database based on the email.
-
-     - **Update an auction listing**:
-
-          node commands.js update-email
-
-          This command add an email to the auction data in the database, currently doesn't update anything else.
 
 ### **API Endpoint**
 
