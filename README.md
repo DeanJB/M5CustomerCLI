@@ -61,7 +61,7 @@ This project is a **Customer Management CLI** tool with an API backend that allo
 
 ### **Running the Project**
 
-- **Start the server**:
+- **Start CLI**:
   To run the CLI interface, use the following command:
 
      ```bash
